@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="he">
 
   <head>
     <meta charset="utf-8">
 
-    <title>Let me sleep on it</title>
+    <title>איך להגן על המכונות הוירטואליות באמצעות שרת האחסון</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -27,8 +27,9 @@
     </script>
 
     <style>
-      pre { width: 100% }
-      ul.items { list-style: none; text-align: center; }
+      .slides h1 { font-size: 2em }
+      .slides pre { width: 100% }
+      .slides ul.items { list-style: none; text-align: center; }
     </style>
 
     <!--[if lt IE 9]>
@@ -43,26 +44,33 @@
       <div class="slides">
 
         <section>
-          <h1>Protecting your VMs with storage leases</h1>
+          <h1>איך להגן על המכונות הוירטואליות באמצעות שרת האחסון</h1>
           <ul class="items" style="font-size: 0.7em">
             <li>
-              <a href="https://github.com/nirs">Nir Soffer</a> <a href="mailto:nsoffer@redhat.com">&lt;nsoffer@redhat.com&gt;</a>
+              <a href="https://github.com/nirs">ניר סופר</a> <a href="mailto:nsoffer@redhat.com">&lt;nsoffer@redhat.com&gt;</a>
             </li>
             <li>
-              <a href="http://ap.hamakor.org.il/2017">August Penguin 2017</a>
+              <a href="http://ap.hamakor.org.il/2017">אוגוסט פינגוין 2017</a>
             </li>
           </ul>
         </section>
 
         <section>
-          <pre style="font-size: 0.8em"><code class="hljs nohighlight" data-trim>
-$ whoami
-Taming the Vdsm beast since 2013
-Tinkering with Python since 2003
-Free software enthusiast
-Father of two
-          </code></pre>
-
+          <h2>
+מי אני?
+	  </h2>
+	  <p>
+	  <ul class="items">
+            <li>
+עובר ברד האט בצוות האחסון של oVirt מאז 2013
+            </li>
+	    <li>
+מתעסק בפייתון ותורם לפרויקטית תוכנה חופשית מאז 2003
+	    </li>
+	    <li>
+אב לשניים
+            </li>
+	  </p>
           <aside class="notes">
           </aside>
         </section>
@@ -70,18 +78,38 @@ Father of two
         <section>
 
           <section>
-            <h2>Section 1, slide 1...</h2>
+            <h2>
+חלק 1, שקף 1
+	    </h2>
 
             <aside class="notes">
             </aside>
           </section>
-
-        </section>
-
-        <section>
 
           <section>
-            <h2>Section 2, slide 1...</h2>
+            <h2>
+חלק 1, שקף 2
+	    </h2>
+
+            <aside class="notes">
+            </aside>
+          </section>
+
+        </section>
+
+          <section>
+            <h2>
+חלק 2, שקף 1
+	    </h2>
+
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <section>
+            <h2>
+חלק 2, שקף 2
+	    </h2>
 
             <aside class="notes">
             </aside>
@@ -90,9 +118,10 @@ Father of two
         </section>
 
         <section>
-          <h2>More info</h2>
-          <p>
-            Fork this talk on github<br>
+          <h2>
+מידע נוסף
+          </h2>
+          <p>Fork this talk on github<br>
             <a href="https://github.com/nirs/vm-leases">https://github.com/nirs/vm-leases</a>
           </p>
           <p>
@@ -105,20 +134,16 @@ Father of two
           </p>
 
           <aside class="notes">
-            <p>This talk is available on github, you can clone and play with
-            the code and the tests.</p>
-
-            <p>oVirt is free software, available on github. We need your
-            help!</p>
-
-            <p>I want to thank Red Hat for paying me to write free software,
-            and for preparing this talk! We are always hiring.</p>
           </aside>
         </section>
 
         <section>
-          <h2>Thank you!</h2>
-          <p>Questions?</p>
+          <h2>
+תודה!
+          </h2>
+          <p>
+שאלות?
+          </p>
         </section>
 
       </div>
@@ -136,6 +161,7 @@ Father of two
         progress: true,
         history: true,
         center: true,
+        rtl: true,
 
         transition: 'convex', // none/fade/slide/convex/concave/zoom
 
