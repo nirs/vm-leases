@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Let me sleep on it</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/beige.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <style>
+      pre { width: 100% }
+      ul.items { list-style: none; text-align: center; }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section>
+          <h1>Protecting your VMs with storage leases</h1>
+          <ul class="items" style="font-size: 0.7em">
+            <li>
+              <a href="https://github.com/nirs">Nir Soffer</a> <a href="mailto:nsoffer@redhat.com">&lt;nsoffer@redhat.com&gt;</a>
+            </li>
+            <li>
+              <a href="http://ap.hamakor.org.il/2017">August Penguin 2017</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <pre style="font-size: 0.8em"><code class="hljs nohighlight" data-trim>
+$ whoami
+Taming the Vdsm beast since 2013
+Tinkering with Python since 2003
+Free software enthusiast
+Father of two
+          </code></pre>
+
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+
+          <section>
+            <h2>Section 1, slide 1...</h2>
+
+            <aside class="notes">
+            </aside>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section>
+            <h2>Section 2, slide 1...</h2>
+
+            <aside class="notes">
+            </aside>
+          </section>
+
+        </section>
+
+        <section>
+          <h2>More info</h2>
+          <p>
+            Fork this talk on github<br>
+            <a href="https://github.com/nirs/vm-leases">https://github.com/nirs/vm-leases</a>
+          </p>
+          <p>
+            oVirt - open your virtual datacenter<br>
+            <a href="https://github.com/ovirt">https://github.com/ovirt</a>
+          </p>
+          <p>
+            We are hiring<br>
+            <a href="https://jobs.redhat.com">https://jobs.redhat.com</a>
+          </p>
+
+          <aside class="notes">
+            <p>This talk is available on github, you can clone and play with
+            the code and the tests.</p>
+
+            <p>oVirt is free software, available on github. We need your
+            help!</p>
+
+            <p>I want to thank Red Hat for paying me to write free software,
+            and for preparing this talk! We are always hiring.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Thank you!</h2>
+          <p>Questions?</p>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.js"></script>
+
+    <script>
+
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
