@@ -65,7 +65,7 @@
 עובר ברד האט בצוות האחסון של oVirt מאז 2013
             </li>
 	    <li>
-מתעסק בפייתון ותורם לפרויקטית תוכנה חופשית מאז 2003
+מתעסק בפייתון ותוכנה חופשית מאז 2003
 	    </li>
 	    <li>
 אב לשניים
@@ -77,6 +77,7 @@
 
           <section>
             <h2>oVirt</h2>
+            <p>על קצה המזלג</p>
           </section>
 
           <section>
@@ -89,23 +90,112 @@
             <h3>
 מה צריכה מכונה וירטואלית?
 	    </h3>
-	    <p>
+	    <p class="fragment">
 מעבדים, זיכרון, רשת, איחסון, התקני חומרה...
+	    </p>
+          </section>
+
+          <section>
+            <h3>
+מה צריכה מכונה וירטואלית חשובה?
+	    </h3>
+	    <p class="fragment">
+מישהו שידאג לה!
+	    </p>
+          </section>
+
+          <section>
+            <h3>Live migration</h3>
+	    <p>
+להעביר מכונה וירטואלית לשרת אחר -  תוך כדי ריצה 
+	    </p>
+          </section>
+
+          <section>
+            <h3>Live storage migration</h3>
+	    <p>
+להעביר דיסקים לשרת איחסון אחר - תוך כדי ריצה
+	    </p>
+          </section>
+
+          <section>
+            <h3>HA VM Availability</h3>
+	    <p>
+להתחיל מכונה וירטואלית על שרת אחר אם השרת המקורי לא נגיש
 	    </p>
           </section>
 
         </section>
 
-          <section>
-            <h2>
-חלק 2, שקף 1
-	    </h2>
-          </section>
+	<section>
 
           <section>
             <h2>
-חלק 2, שקף 2
+איחסון
 	    </h2>
+	    <p>
+על קצה המזלג
+            </p>
+          </section>
+
+          <section>
+            <h3>
+שיתוף הוא טוב
+	    </h3>
+            <ul class="items">
+	      <li class="fragment">
+כמו קוד חופשי, גם לאיחסון משותף יש יתרונות
+	      </li>
+	      <li class="fragment"><p><small>
+(אנחנו תומכים גם באיחסון מקומי, אבל התכונות המעניינות אפשריות רק כשהאיחסון משותף)
+	      </small></p></li>
+	    </ul>
+          </section>
+
+          <section>
+            <h3>Block storage</h3>
+            <ul class="items">
+	      <li>FC, iSCSI</li>
+	      <li class="fragment">
+דיסקים הם LVM logical volumes
+              </li>
+	    </ul>
+          </section>
+
+          <section>
+            <h3>File storage</h3>
+            <ul class="items">
+	      <li>NFS, GlusterFS, POSIX</li>
+	      <li class="fragment">
+דיסקים הם קבצים
+              </li>
+	    </ul>
+          </section>
+
+          <section>
+            <h3>
+Sanlock
+            </h3>
+            <p>
+מאפשר לסנכרן פעולות על האיחסון המשותף כדי למנוע השחתה
+            </p>
+          </section>
+
+          <section>
+            <h3>
+Storage lease
+            </h3>
+            <ul class="items">
+              <li class="fragment">
+רק תהליך אחד יכול להחזיק אותו בו זמנית
+              </li>
+              <li class="fragment">
+צריך לחדש אותו על ידי כתיבה לשרת האיחסון
+              </li>
+              <li class="fragment">
+ אם אין גישה לשרת האיחסון, Sanlock משחרר את ה-Lease והורג את התהליך שמחזיק בו
+              </li>
+	    </ul>
           </section>
 
         </section>
